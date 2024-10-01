@@ -3,25 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --primary-purple: #AFB4FC;
+  --sky-blue: #09B5FF;
+  --tosca: #34ACC7;
+  --purple: #A134C7;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .container {
+    @apply w-[calc(100%_-_50px)] max-w-[955px] mx-auto font-mulish
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .center-flex {
+    @apply flex justify-center items-center
   }
 }
