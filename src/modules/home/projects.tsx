@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 
 function ProjectCard(props: { id: number; title: string; year: number; image: string }) {
     return (
@@ -13,10 +14,12 @@ function ProjectCard(props: { id: number; title: string; year: number; image: st
                     height={200}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-white/30" aria-label="filter" />
-                <button
-                    className="z-10 text-sm w-max bg-white/10 hover:bg-white/40 transition-colors duration-300 rounded-full border border-[#6D6D6D] py-2 px-5">
-                    See details
-                </button>
+                <Link href={`/project/1`} className="z-10">
+                    <div
+                        className="text-sm w-max bg-white/10 hover:bg-white/40 transition-colors duration-300 rounded-full border border-[#6D6D6D] py-2 px-5">
+                        See details
+                    </div>
+                </Link>
             </div>
         </div>
     )
@@ -36,7 +39,7 @@ export default function Projects() {
                     year={2024}
                     image="/black-myth-wukong.jpg"
                 />
-                 <ProjectCard
+                <ProjectCard
                     id={1}
                     title="Black Myth Wukong"
                     year={2024}
