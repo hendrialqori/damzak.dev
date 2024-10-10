@@ -7,7 +7,7 @@ import Footer from "#/modules/home/footer";
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main className="bg-black font-mulish">
       <Hero />
       <Profile />
       <WorkExperiences />
