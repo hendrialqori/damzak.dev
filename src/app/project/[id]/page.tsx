@@ -4,13 +4,13 @@ import Gameplay from "#/modules/detail-project/gameplay"
 import Hero from "#/modules/detail-project/hero"
 import Story from "#/modules/detail-project/story"
 
-type Props = {
-    params: {
-        id: number
-    }
-}
+// type Props = {
+//     params: {
+//         id: number
+//     }
+// }
 
-export default function DetailProject(props) {
+export default function DetailProject() {
     return (
         <main className="bg-black font-mulish">
             <Hero />
