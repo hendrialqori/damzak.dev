@@ -1,17 +1,4 @@
-import Image from "next/image";
-
-function GalleryCard(props: { title: string; image: string }) {
-    return (
-        <figure className="relative rounded-xl overflow-hidden">
-            <div className="size-full" aria-label="image-wrapper">
-                <Image src={props.image} alt="project-image" className="size-full object-cover" width={500} height={500} />
-            </div>
-            <figcaption className="absolute left-0 right-0 bottom-0 bg-black/50 h-10 md:h-20 flex items-center">
-                <p className="pl-5 text-xs md:text-base">{props.title}</p>
-            </figcaption>
-        </figure>
-    )
-}
+import GalleryCard from "./gallery-card";
 
 export default function Gallery() {
     return (
