@@ -5,8 +5,7 @@ import Image from "next/image";
 import Portal from "#/components/portal";
 import {
     TransformWrapper,
-    TransformComponent,
-    ReactZoomPanPinchProps
+    TransformComponent
 } from "react-zoom-pan-pinch";
 import { LuZoomIn, LuZoomOut } from "react-icons/lu";
 import { TbZoomReset } from "react-icons/tb";
